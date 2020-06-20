@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+float a,root;
+printf("enter a number");
+scanf("%f",&a);
+root=sqrt(a);
+printf("the squareroot of %f is %f",a,root);
+getch();
+}
