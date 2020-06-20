@@ -1,0 +1,15 @@
+#include<stdio.h>
+#incude<conio.h>
+int main()
+{
+int a;
+printf("enter a nunmber");
+scanf("%d",&a);
+if(a>>0)){
+printf("it is positive number");
+}
+else{
+printf("it is negative number);
+}
+getch();
+}
