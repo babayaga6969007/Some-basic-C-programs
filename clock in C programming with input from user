@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include <windows.h>     //we are including windows file (it's connected to function sleep()), which means that this will only work for windows, so if you're using another OS, search in google for other versions of sleep().
+
+int main()
+
+{
+
+int h, m, s;      //we add hours, minutes and seconds to our program
+
+int D = 1000;      //we add Delay of 1000 milliseconds, which makes a second and we will use that in sleep().
+
+printf("Set time:\n");   //printf writes on screen text that is inside of (" ") and \n writes in a new row.
+
+scanf("%d %d %d", &h, &m, &s);   //scanf is where we insert our time, or our values.
+
+if (h > 12)
+{
+printf("ERROR!\n");
+exit(0); 
+} 
+
+if (m > 60)
+{
+printf("ERROR!\n"); 
+exit(0); 
+}
+
+if (s > 60) 4
+{ printf("ERROR!\n");
+exit(0);
+} 
+
+while (1)  //while (1) is an infinity loop and anything inside repeats itself to infinity.
+{
+
+s += 1;  // this tells program to increase seconds for 1, everytime the while loop comes to this part.
+
+if (s > 59)
+{ 
+m += 1;
+s = 0;
+}//if the seconds are more than 59, it increases the minutes and sets seconds to 0.
+
+if (m > 59)
+{
+h += 1;
+m = 0;
+}
+
+if (h > 12)
+{
+h = 1; 
+m = 0;
+s = 0; 
+} 
+
+printf("\n Clock");
+
+printf("\n%02d:%02d:%02d", h, m, s);   //this writes our time in this format "00:00:00"
+
+Sleep(D);    //this is our function sleep which slows down the while loop and makes it more like a clock.
+
+system("cls");  //this clears the screen.
+
+}
+
+getchar();
+return 0;
+
+}
