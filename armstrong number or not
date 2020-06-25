@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<math.h>
 
 int main()
 {
@@ -13,7 +14,7 @@ b=num%10;
 num=num/10;
 c=num%10;
 
-sum=a*a*a+b*b*b+c*c*c;
+sum=pow(a,3) + pow(b,3) + pow(c,3);
 if(sum == n)
 {
 printf("it is a armstrong number");
