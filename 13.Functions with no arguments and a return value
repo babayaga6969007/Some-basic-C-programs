@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int add();
+int main()
+{
+    int result;
+    result=add();
+    printf("the sum is %d",result);
+    return 0;
+}
+int add()
+{
+
+    int a,b,sum;
+    printf("enter two numbers");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    return sum;
+}
