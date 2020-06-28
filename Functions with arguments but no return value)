@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void add(int x,int y);
+int main()
+{
+  int i,j;
+  printf("enter two numbers");
+  scanf("%d%d",&i,&j);
+  add(i,j);
+  return 0;
+}
+void add(int i, int j)
+{
+    int sum;
+    sum=i+j;
+    printf("the sum is %d",sum);
+}
